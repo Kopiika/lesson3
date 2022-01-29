@@ -1,0 +1,110 @@
+/* селектор тега */
+
+h1{
+	color: rgb(13, 216, 57);
+}
+
+h2, 
+h3{
+	color:green;
+}
+
+h4{
+	color: blueviolet;
+}
+
+span, 
+.attention{
+	color: red;
+}
+
+/* селектор класа */
+
+/* обратилась ко всем объектам с класом list */
+.list{
+	color: rgb(36, 34, 134);
+}
+.influence{
+	color: rgb(212, 14, 212);
+}
+.body-position{
+	color: darkslategray;
+}
+
+
+
+
+/* селектор id */
+
+/* обратилась к объекту с id */
+#section{
+	color: rgb(9, 97, 109);
+}
+
+#section-suriya-video{
+	color: darkolivegreen;
+}
+
+
+
+/* комбинация селекторов класа */
+/* все объекты с двумя класами: list и body-position*/
+.list.body-position{
+	color: darkorange;
+}
+
+/* вложеность
+обратилась ко всем р которые нахоятся внутри div */
+div p{
+	color: dimgray;
+}
+/* обратилась ко всем span которые нахоятся внутри h4 */
+h4 span{
+	color: hotpink;
+}
+
+/* все ссылки внутри списка */
+li a{
+	color: lightcoral;
+}
+
+p mark{
+	color: chartreuse;
+}
+
+/* обратилась ко всем объектам с класом text которые находятся внктри list */
+.list .text{
+	color: skyblue;
+}
+
+
+/* обратилась к всем объектам span с класом definition */
+span.definition{
+	color: rgb(233, 229, 2);
+}
+
+
+/* селекторы атрибутов */
+
+/* только первый уровень вложенности */
+.section > p {
+	color: rgb(240, 37, 115);
+}
+
+/* обращение только к первому следующему объекту того же уровня */
+.section2-paragraph + p{
+	color: sienna;
+}
+
+.section4-paragraph +*{
+	color: yellow;
+}
+/* обращаемся ко всем следующим объектам того же уровня */
+.section3-paragraph ~ p{
+	color: teal;
+}
+
+/* общий селектор (обращаемся ко всему) */
+*{
+	color: rgb(120, 102, 161);
+}
